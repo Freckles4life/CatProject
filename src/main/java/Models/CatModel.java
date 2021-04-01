@@ -1,12 +1,14 @@
+package Models;
+
 public class CatModel {
     private int id;
-    private String name;
+    private String breed;
     private String description;
     private String wikipedia_url;
 
-    public CatModel(int id, String name, String description, String wikipedia_url) {
+    public CatModel(int id, String breed, String description, String wikipedia_url) {
         this.id = id;
-        this.name = name;
+        this.breed = breed;
         this.description = description;
         this.wikipedia_url = wikipedia_url;
     }
@@ -19,12 +21,12 @@ public class CatModel {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getBreed() {
+        return breed;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
     public String getDescription() {
@@ -43,4 +45,6 @@ public class CatModel {
         this.wikipedia_url = wikipedia_url;
     }
 }
+
+
 
