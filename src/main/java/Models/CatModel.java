@@ -5,12 +5,14 @@ public class CatModel {
     private String breed;
     private String description;
     private String wikipedia_url;
+    private CatImage image;
 
-    public CatModel(String id, String breed, String description, String wikipedia_url) {
+    public CatModel(String id, String breed, String description, String wikipedia_url, CatImage image) {
         this.id = id;
         this.breed = breed;
         this.description = description;
         this.wikipedia_url = wikipedia_url;
+        this.image = image;
     }
 
     public String getId() {
@@ -44,6 +46,10 @@ public class CatModel {
     public void setWikipedia_url(String wikipedia_url) {
         this.wikipedia_url = wikipedia_url;
     }
+
+    public CatImage getImage() { return image; }
+
+    public void setImage(CatImage image) { this.image = image; }
 }
 
 
