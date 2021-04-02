@@ -1,23 +1,23 @@
 package Models;
 
 public class CatModel {
-    private int id;
+    private String id;
     private String breed;
     private String description;
     private String wikipedia_url;
 
-    public CatModel(int id, String breed, String description, String wikipedia_url) {
+    public CatModel(String id, String breed, String description, String wikipedia_url) {
         this.id = id;
         this.breed = breed;
         this.description = description;
         this.wikipedia_url = wikipedia_url;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
