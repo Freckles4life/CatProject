@@ -2,7 +2,7 @@ package Views;
 
 import javax.swing.*;
 
-public class GuiMain {
+public class Main {
    private JButton button;
     private JPanel panel1;
     private JTextField textField;
@@ -12,7 +12,7 @@ public class GuiMain {
     //Initializes the JFrame
     JFrame frame = new JFrame("GuiMain");
     //Adds to the JFrame our main panel
-            frame.setContentPane(new GuiMain().panel1);
+            frame.setContentPane(new Main().panel1);
     //Set the default operation when closing the panel
     //In this case, exit the program
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
