@@ -5,13 +5,15 @@ public class CatModel {
     private String name;
     private String description;
     private String temperament;
+    private String wikipedia_url;
     private CatImage image;
 
-    public CatModel(String id, String name, String description, String wikipedia_url, CatImage image) {
+    public CatModel(String id, String name, String description, String temperament ,String wikipedia_url, CatImage image) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.temperament = temperament;
+        this.wikipedia_url = wikipedia_url;
         this.image = image;
     }
 
@@ -45,6 +47,14 @@ public class CatModel {
 
     public void setTemperament(String temperament) {
         this.temperament = temperament;
+    }
+
+    public String getWikipedia_url() {
+        return wikipedia_url;
+    }
+
+    public void setWikipedia_url(String wikipedia_url) {
+        this.wikipedia_url = wikipedia_url;
     }
 
     public CatImage getImage() { return image; }

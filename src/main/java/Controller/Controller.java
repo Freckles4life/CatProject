@@ -46,7 +46,9 @@ public class Controller {
                         catBreed.getName(),
                         catBreed.getDescription(),
                         catBreed.getWikipedia_url(),
-                        catBreed.getImage().getUrl());
+                        catBreed.getImage().getUrl(),
+                        catBreed.getTemperament()
+                );
 
                 theView.getCatDescriptionPanel().removeAll();
                 theView.getCatDescriptionPanel().add(description);
