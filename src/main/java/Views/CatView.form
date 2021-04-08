@@ -1,42 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Views.CatView">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="rootPanel" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="486" height="347"/>
     </constraints>
     <properties>
       <background color="-3938075"/>
+      <enabled value="true"/>
     </properties>
     <border type="none"/>
     <children>
-      <component id="67ab9" class="javax.swing.JTextField" binding="textField">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
+      <grid id="827b1" binding="catButtons" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="2">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints/>
         <properties>
-          <background color="-1381419"/>
-          <font name="Berlin Sans FB Demi" size="16" style="1"/>
-          <foreground color="-16019419"/>
-          <horizontalAlignment value="0"/>
-          <text value=""/>
+          <background color="-4626016"/>
+          <name value=""/>
         </properties>
-      </component>
-      <component id="3af7d" class="javax.swing.JButton" binding="button">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="336f9" binding="catDescription" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
         <properties>
-          <background color="-1381419"/>
-          <font name="Incised901 BdCn TL" size="20" style="1"/>
-          <foreground color="-16019419"/>
-          <hideActionText value="false"/>
-          <text value="Display cats"/>
-          <toolTipText value=""/>
+          <background color="-2829243"/>
+          <name value=""/>
         </properties>
-      </component>
+        <border type="none"/>
+        <children/>
+      </grid>
     </children>
   </grid>
 </form>
