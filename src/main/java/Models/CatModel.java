@@ -57,7 +57,7 @@ public class CatModel {
         this.wikipedia_url = wikipedia_url;
     }
 
-    public CatImage getImage() { return image; }
+    public CatImage getImage() { if (image == null) return new CatImage(); return image; }
 
     public void setImage(CatImage image) { this.image = image; }
 }
