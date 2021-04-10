@@ -6,7 +6,9 @@ public class CatImage {
     private String url;
     private int width;
 
-    public CatImage() { }
+    public CatImage() {
+
+    }
 
     public CatImage(int height, String id, String url, int width) {
         this.height = height;
@@ -15,9 +17,13 @@ public class CatImage {
         this.width = width;
     }
 
-    public int getHeight() { return height; }
+    public int getHeight() {
+        return height;
+    }
 
-    public void setHeight(int height) { this.height = height; }
+    public void setHeight(int height) {
+        this.height = height;
+    }
 
     public String getId() {
         return id;
@@ -35,7 +41,11 @@ public class CatImage {
         this.url = url;
     }
 
-    public int getWidth() { return width; }
+    public int getWidth() {
+        return width;
+    }
 
-    public void setWidth(int width) {this.width = width; }
+    public void setWidth(int width) {
+        this.width = width;
+    }
 }
