@@ -25,7 +25,7 @@ public class CatDescription extends JPanel{
         this.catDescriptionText.setText(catDescription);
         this.catDescriptionText.setLineWrap(true);
 
-        this.catTemperment.setText("Termperment");
+        this.catTemperment.setText("Temperment");
         this.catTempermentText.setText(catTemperment);
         this.catTempermentText.setLineWrap(true);
 
@@ -39,6 +39,7 @@ public class CatDescription extends JPanel{
         this.imageUrlText.setText(imageUrl);
 
         this.add(catDescriptionPanel);
+
     }
 
 }
