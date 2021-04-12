@@ -73,7 +73,6 @@ public class Controller {
                 theView.repaint();
             });
 
-            //force theView to show new things.
             theView.invalidate();
             theView.validate();
             theView.repaint();
