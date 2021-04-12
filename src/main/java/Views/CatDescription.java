@@ -28,6 +28,7 @@ public class CatDescription extends JPanel{
         this.catDescriptionText.setText(catDescription);
         this.catDescriptionText.setLineWrap(true);
 
+
         this.catTemperment.setText("Temperment");
         this.catTempermentText.setText(catTemperment);
         this.catTempermentText.setWrapStyleWord(true);

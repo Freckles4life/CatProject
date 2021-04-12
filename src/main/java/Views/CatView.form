@@ -7,8 +7,9 @@
     <properties>
       <background color="-12500118"/>
       <enabled value="true"/>
+      <opaque value="true"/>
     </properties>
-    <border type="none"/>
+    <border type="empty"/>
     <children>
       <component id="102df" class="javax.swing.JLabel" binding="titleLabel">
         <constraints/>
@@ -25,7 +26,7 @@
           <background color="-12500118"/>
           <name value=""/>
         </properties>
-        <border type="none"/>
+        <border type="empty"/>
         <children/>
       </grid>
       <grid id="336f9" binding="catDescription" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
@@ -34,8 +35,9 @@
           <background color="-6799261"/>
           <enabled value="true"/>
           <name value=""/>
+          <opaque value="false"/>
         </properties>
-        <border type="none"/>
+        <border type="empty"/>
         <children/>
       </grid>
     </children>

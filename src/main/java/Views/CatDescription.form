@@ -9,11 +9,15 @@
       <autoscrolls value="true"/>
       <background color="-92553"/>
       <name value="catDescription"/>
+      <opaque value="true"/>
+      <verifyInputWhenFocusTarget value="false"/>
     </properties>
     <clientProperties>
       <html.disable class="java.lang.Boolean" value="false"/>
     </clientProperties>
-    <border type="empty"/>
+    <border type="empty">
+      <size top="0" left="0" bottom="0" right="0"/>
+    </border>
     <children>
       <component id="4299e" class="javax.swing.JLabel" binding="catBreedImage">
         <constraints>

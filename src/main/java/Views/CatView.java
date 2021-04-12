@@ -15,8 +15,6 @@ public class CatView extends JFrame {
 
         this.catButtons.setLayout(new GridLayout(15, 5));
 
-        this.catDescription.setLayout(new GridLayout(1, 1));
-
         this.add(rootPanel);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1000, 1000); // visa vizualizācijas loga lielums//
