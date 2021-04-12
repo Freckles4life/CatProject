@@ -22,6 +22,7 @@ public class CatDescription extends JPanel{
 
         this.catName.setText("Name");
         this.catNameText.setText(catName);
+        this.catNameText.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 
         this.catDescription.setText("Description");
         this.catDescriptionText.setText(catDescription);
@@ -29,13 +30,17 @@ public class CatDescription extends JPanel{
 
         this.catTemperment.setText("Temperment");
         this.catTempermentText.setText(catTemperment);
-        this.catTempermentText.setLineWrap(true);
+        this.catTempermentText.setWrapStyleWord(true);
 
         this.imageUrl.setText("Image Url");
         this.imageUrlText.setText(imageUrl);
+        this.imageUrlText.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+
 
         this.wikiUrl.setText("Wiki Url");
         this.wikiUrlText.setText(wikiUrl);
+        this.wikiUrlText.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+
 
         if(catImage != null)
         {

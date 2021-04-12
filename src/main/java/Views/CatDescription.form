@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Views.CatDescription">
-  <grid id="27dc6" binding="catDescriptionPanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="catDescriptionPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="35" y="27" width="625" height="359"/>
+      <xy x="35" y="27" width="1009" height="445"/>
     </constraints>
     <properties>
       <autoscrolls value="true"/>
-      <background color="-3880506"/>
+      <background color="-92553"/>
       <name value="catDescription"/>
     </properties>
     <clientProperties>
       <html.disable class="java.lang.Boolean" value="false"/>
     </clientProperties>
-    <border type="none"/>
+    <border type="empty"/>
     <children>
-      <component id="bf917" class="javax.swing.JLabel" binding="catName">
+      <component id="4299e" class="javax.swing.JLabel" binding="catBreedImage">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="200"/>
+            <preferred-size width="200" height="200"/>
+            <maximum-size width="200" height="200"/>
+          </grid>
         </constraints>
         <properties>
-          <alignmentX value="0.0"/>
-          <foreground color="-16777216"/>
-          <labelFor value="1d1c7"/>
-          <text value="Name"/>
+          <foreground color="-12500118"/>
+          <opaque value="false"/>
+          <text value=" Cat image"/>
+          <verticalAlignment value="0"/>
+          <verticalTextPosition value="0"/>
         </properties>
       </component>
       <component id="ac187" class="javax.swing.JLabel">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <alignmentX value="0.5"/>
@@ -36,110 +41,151 @@
           <enabled value="true"/>
           <focusCycleRoot value="false"/>
           <font size="26" style="1"/>
-          <foreground color="-16777216"/>
+          <foreground color="-12500118"/>
           <horizontalAlignment value="10"/>
           <text value="Breed Description"/>
         </properties>
       </component>
-      <component id="63168" class="javax.swing.JLabel" binding="catDescription">
+      <grid id="c397c" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <foreground color="-16777216"/>
-          <labelFor value="94ba9"/>
-          <text value="Description"/>
+          <background color="-92553"/>
         </properties>
-      </component>
-      <component id="13f0d" class="javax.swing.JLabel" binding="catTemperment">
-        <constraints>
-          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <foreground color="-16777216"/>
-          <labelFor value="c413e"/>
-          <text value="Temperment"/>
-        </properties>
-      </component>
-      <component id="9358d" class="javax.swing.JLabel" binding="wikiUrl">
-        <constraints>
-          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <foreground color="-16777216"/>
-          <labelFor value="9061e"/>
-          <text value="WikiUrl"/>
-        </properties>
-      </component>
-      <component id="94ab3" class="javax.swing.JLabel" binding="imageUrl">
-        <constraints>
-          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <foreground color="-16777216"/>
-          <labelFor value="13110"/>
-          <text value="ImageUrl"/>
-        </properties>
-      </component>
-      <component id="94ba9" class="javax.swing.JTextArea" binding="catDescriptionText">
-        <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="400" height="50"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="c413e" class="javax.swing.JTextArea" binding="catTempermentText">
-        <constraints>
-          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="400" height="50"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="1d1c7" class="javax.swing.JTextField" binding="catNameText">
-        <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="200" height="20"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="13110" class="javax.swing.JTextField" binding="imageUrlText">
-        <constraints>
-          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="400" height="20"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="9061e" class="javax.swing.JTextField" binding="wikiUrlText">
-        <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="400" height="20"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="4299e" class="javax.swing.JLabel" binding="catBreedImage">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <minimum-size width="200" height="200"/>
-            <preferred-size width="200" height="200"/>
-            <maximum-size width="200" height="200"/>
-          </grid>
-        </constraints>
-        <properties>
-          <foreground color="-16777216"/>
-          <text value="No breed image. :( "/>
-        </properties>
-      </component>
+        <border type="none"/>
+        <children>
+          <component id="bf917" class="javax.swing.JLabel" binding="catName">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <alignmentX value="0.0"/>
+              <foreground color="-12500118"/>
+              <labelFor value="1d1c7"/>
+              <text value="Name"/>
+            </properties>
+          </component>
+          <vspacer id="2ceb0">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="1d1c7" class="javax.swing.JTextField" binding="catNameText">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-92553"/>
+              <caretColor color="-92553"/>
+              <editable value="false"/>
+              <foreground color="-12500118"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="94ba9" class="javax.swing.JTextArea" binding="catDescriptionText">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="400" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-92553"/>
+              <editable value="false"/>
+              <foreground color="-12500118"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="63168" class="javax.swing.JLabel" binding="catDescription">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-12500118"/>
+              <labelFor value="94ba9"/>
+              <text value="Description"/>
+            </properties>
+          </component>
+          <component id="c413e" class="javax.swing.JTextArea" binding="catTempermentText">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="400" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-92553"/>
+              <editable value="false"/>
+              <foreground color="-12500118"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="13f0d" class="javax.swing.JLabel" binding="catTemperment">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-12500118"/>
+              <labelFor value="c413e"/>
+              <text value="Temperment"/>
+            </properties>
+          </component>
+          <component id="9061e" class="javax.swing.JTextField" binding="wikiUrlText">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="400" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-92553"/>
+              <editable value="false"/>
+              <foreground color="-12500118"/>
+            </properties>
+          </component>
+          <component id="9358d" class="javax.swing.JLabel" binding="wikiUrl">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-12500118"/>
+              <labelFor value="9061e"/>
+              <text value="WikiUrl"/>
+            </properties>
+          </component>
+          <component id="94ab3" class="javax.swing.JLabel" binding="imageUrl">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-12500118"/>
+              <labelFor value="13110"/>
+              <text value="ImageUrl"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="13110" class="javax.swing.JTextField" binding="imageUrlText">
+            <constraints>
+              <grid row="4" column="1" row-span="2" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="400" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-92553"/>
+              <editable value="false"/>
+              <enabled value="true"/>
+              <focusable value="true"/>
+              <foreground color="-12500118"/>
+              <opaque value="true"/>
+              <requestFocusEnabled value="true"/>
+              <verifyInputWhenFocusTarget value="true"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>

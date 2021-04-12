@@ -37,6 +37,12 @@ public class Controller {
         for (CatModel cat : theViewModel.getBreedList()) {
 
             JButton catButton = new JButton(cat.getName());
+            catButton.setBorderPainted(true);
+            catButton.setFocusPainted(false);
+            catButton.setContentAreaFilled(true);
+            catButton.setBackground(new Color(152,64,99));
+            catButton.setForeground(new Color(254, 150, 119));
+
             theView.getCatButtonPanel().add(catButton);
 
             catButton.addActionListener(e -> {
