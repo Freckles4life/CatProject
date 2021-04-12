@@ -49,7 +49,7 @@ public class CatDescription extends JPanel{
         }
         else
         {
-            this.catBreedImage.setText("No image, but this cat is beautiful!");
+            this.catBreedImage.setText("No cat image! (= ＴェＴ=) ");
         }
         this.add(catDescriptionPanel);
 
