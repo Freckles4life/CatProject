@@ -2,7 +2,6 @@ package Models;
 
 public class CatImage {
     private int height;
-    private String id;
     private String url;
     private int width;
 
@@ -10,9 +9,8 @@ public class CatImage {
 
     }
 
-    public CatImage(int height, String id, String url, int width) {
+    public CatImage(int height, String url, int width) {
         this.height = height;
-        this.id = id;
         this.url = url;
         this.width = width;
     }
@@ -23,14 +21,6 @@ public class CatImage {
 
     public void setHeight(int height) {
         this.height = height;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getUrl() {

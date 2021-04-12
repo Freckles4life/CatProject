@@ -13,11 +13,11 @@ public class CatView extends JFrame {
         this.titleLabel.setText("❤ Choose your kitten breed ❤");
         this.titleLabel.setFont(new Font("Magneto", Font.PLAIN, 30));
 
-        this.catButtons.setLayout(new GridLayout(15, 5));
+        this.catButtons.setLayout(new GridLayout(10, 5));
 
         this.add(rootPanel);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(1000, 1000); // visa vizualizācijas loga lielums//
+        this.setSize(1285, 1000);
         this.setVisible(true);
     }
 
