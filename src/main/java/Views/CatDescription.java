@@ -1,6 +1,7 @@
 package Views;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class CatDescription extends JPanel{
 
@@ -15,8 +16,9 @@ public class CatDescription extends JPanel{
     private JTextField wikiUrlText;
     private JLabel imageUrl;
     private JTextField imageUrlText;
+    private JLabel catBreedImage;
 
-    public CatDescription(String catName, String catDescription, String wikiUrl, String imageUrl, String catTemperment) {
+    public CatDescription(String catName, String catDescription, String wikiUrl, String imageUrl, String catTemperment, Image catImage) {
 
         this.catName.setText("Name");
         this.catNameText.setText(catName);
@@ -35,9 +37,14 @@ public class CatDescription extends JPanel{
         this.wikiUrl.setText("Wiki Url");
         this.wikiUrlText.setText(wikiUrl);
 
-        this.imageUrl.setText("Image Url");
-        this.imageUrlText.setText(imageUrl);
-
+        if(catImage != null)
+        {
+            this.catBreedImage.setIcon(new ImageIcon(catImage));
+        }
+        else
+        {
+            this.catBreedImage.setText("No cat image! (= ＴェＴ=)");
+        }
         this.add(catDescriptionPanel);
     }
 

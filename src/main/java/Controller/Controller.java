@@ -6,7 +6,12 @@ import Models.CatViewModel;
 import Views.CatDescription;
 import Views.CatView;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Arrays;
 
 
@@ -47,7 +52,8 @@ public class Controller {
                         catBreed.getDescription(),
                         catBreed.getWikipedia_url(),
                         catBreed.getImage().getUrl(),
-                        catBreed.getTemperament()
+                        catBreed.getTemperament(),
+                        this.GetCatImage((catBreed.getImage().getUrl()))
                 );
 
                 theView.getCatDescriptionPanel().removeAll();
@@ -64,5 +70,26 @@ public class Controller {
             theView.validate();
             theView.repaint();
         }
+    }
+
+    private Image GetCatImage(String url){
+        if(url == null) {
+            return null;
+        }
+
+        Image catBreedImage = null;
+
+        try{
+            URL imageUrl = new URL(url);
+            catBreedImage = ImageIO.read(imageUrl);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if(catBreedImage != null)
+            catBreedImage = catBreedImage.getScaledInstance(200,200,Image.SCALE_DEFAULT);
+
+        return catBreedImage;
+
     }
 }
